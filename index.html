@@ -1,325 +1,501 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="mediaqueries.css">
-</head>
-<body>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+  <body>
     <!-- NAV BAR -->
     <nav id="desktop-nav">
-        <div class="logo">Tomas Sanni</div>
-        <div>
-            <ul class="nav-links">
-                <li><a href="#about">About</a></li>
-                <li><a href="#experience">Experience</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contacts">Contacts</a></li>
-            </ul>
-        </div>
+      <div class="logo">Tomas Sanni</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contacts">Contacts</a></li>
+        </ul>
+      </div>
     </nav>
 
     <!-- HAMBURGER NAVIGATION -->
     <nav id="hamburger-nav">
-        <div class="logo">Tomas Sanni</div>
-        <div class="hamburger-menu">
-            <div class="hamburger-icon" onclick="toggleMenu()">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-            <div class="menu-links">
-                <li><a href="#about" onclick="toggleMenu()">About</a></li>
-                <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
-                <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
-                <li><a href="#contacts" onclick="toggleMenu()">Contacts</a></li>
-            </div>
+      <div class="logo">Tomas Sanni</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
         </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contacts" onclick="toggleMenu()">Contacts</a></li>
+        </div>
+      </div>
     </nav>
-    
+
     <!-- PROFILE SECTION -->
     <section id="profile">
-        <div class="section__pic-container">
-            <img src="./assets/my-image.jpeg" alt="Profile Picture" class="myImage">
-        </div>
+      <div class="section__pic-container">
+        <img
+          src="./assets/my-image.jpeg"
+          alt="Profile Picture"
+          class="myImage"
+        />
+      </div>
 
-        <div class="section__text">
-            <p class="section__text__p1">Hello, I'm</p>
-            <h1 class="title">Tomas Sanni</h1>
-            <p class="section__text__p2">iOS & Web Developer</p>
-            <div class="btn-container">
-                <button class="btn btn-color-2" onclick="window.open('./assets/Tomas_Sanni_Resume.pdf')">Download CV</button>
-                <button class="btn btn-color-1" onclick="location.href='./#contacts'">Contact Info</button>
-            </div>
-            <div id="socials-container">
-                <!-- <img src="./assets/linkedin.png" alt="My LinkedIn profile" class="icon" onclick="location.href='https://www.linkedin.com/in/tomas-sanni/'"> -->
-                <a href="https://www.linkedin.com/in/tomas-sanni/" target="_blank" rel="noopener noreferrer">
-                    <img src="./assets/linkedin.png" alt="My LinkedIn profile" class="icon">
-                </a>
-
-                <!-- <img src="./assets/github.png" alt="My Github profile" class="icon" onclick="location.href='https://github.com/TSanni'"> -->
-                <a href="https://github.com/TSanni" target="_blank" rel="noopener noreferrer">
-                    <img src="./assets/github.png" alt="My Github profile" class="icon">
-                </a>
-            </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">Tomas Sanni</h1>
+        <p class="section__text__p2">iOS & Web Developer</p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('./assets/Tomas_Sanni_Resume.pdf')"
+          >
+            Download CV
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='./#contacts'">
+            Contact Info
+          </button>
         </div>
+        <div id="socials-container">
+          <!-- <img src="./assets/linkedin.png" alt="My LinkedIn profile" class="icon" onclick="location.href='https://www.linkedin.com/in/tomas-sanni/'"> -->
+          <a
+            href="https://www.linkedin.com/in/tomas-sanni/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img
+              src="./assets/linkedin.png"
+              alt="My LinkedIn profile"
+              class="icon"
+            />
+          </a>
+
+          <!-- <img src="./assets/github.png" alt="My Github profile" class="icon" onclick="location.href='https://github.com/TSanni'"> -->
+          <a
+            href="https://github.com/TSanni"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img
+              src="./assets/github.png"
+              alt="My Github profile"
+              class="icon"
+            />
+          </a>
+        </div>
+      </div>
     </section>
 
     <!-- ABOUT SECTION -->
     <section id="about">
-        <p class="section__text__p1">Get to Know More</p>
-        <h1 class="title">About Me</h1>
-        <div class="section-container">
-            <div class="section__pic-container">
-                <img src="./assets//my-image-2.jpg" alt="profile picture" class="about-pic">
+      <p class="section__text__p1">Get to Know More</p>
+      <h1 class="title">About Me</h1>
+      <div class="section-container">
+        <div class="section__pic-container">
+          <img
+            src="./assets//my-image-2.jpg"
+            alt="profile picture"
+            class="about-pic"
+          />
+        </div>
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img
+                src="./assets/experience.png"
+                alt="experience icon"
+                class="icon"
+              />
+              <h3>Experience</h3>
+              <p>Published iOS Apps <br />Numerous GitHub projects</p>
             </div>
-            <div class="about-details-container">
-                <div class="about-containers">
-                    <div class="details-container">
-                        <img src="./assets/experience.png" alt="experience icon" class="icon">
-                        <h3>Experience</h3>
-                        <p>Published iOS Apps <br>Numerous GitHub projects</br> </p>
-                    </div>
-                    <div class="details-container">
-                        <img src="./assets/education.png" alt="education icon" class="icon">
-                        <h3>Education</h3>
-                        <p>Bachelor of Science <br>Computer Science</br> </p>
-                    </div>
-                </div>
-                <div class="text-container">
-                    <p>I am a computer science graduate from the University of Houston and have chosen iOS as my specialization. I have published multiple free apps to the iOS App Store and have recieved donations from users of the apps. For all those interested, I also publish all of my projects to GitHub (including my App Store applications) so that everyone may view the source code. I love developing for iOS and intend on keeping up with the latest from Apple. </p>
-                    <br>
-                    <p> In my personal life, I like to go to the gym and travel whenever I can. My favorite trip was when I visited Japan. I believe everyone should go travel there at least once. One of my goals is to live there at some point, whenever an opportunity presents itself. It can be now or 30 years later, but I want to experience the culture again firsthand. Some of my less active hobbies include watching anime (some of my favorites are One Piece and ReLife) and playing video games (currently main Dragon Ball Sparking Zero). </p>
-
-                </div>
+            <div class="details-container">
+              <img
+                src="./assets/education.png"
+                alt="education icon"
+                class="icon"
+              />
+              <h3>Education</h3>
+              <p>Bachelor of Science <br />Computer Science</p>
             </div>
-        </div><img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#experience'">
+          </div>
+          <div class="text-container">
+            <p>
+              I am a computer science graduate from the University of Houston
+              and have chosen iOS as my specialization. I have published
+              multiple free apps to the iOS App Store and have recieved
+              donations from users of the apps. For all those interested, I also
+              publish all of my projects to GitHub (including my App Store
+              applications) so that everyone may view the source code. I love
+              developing for iOS and intend on keeping up with the latest from
+              Apple.
+            </p>
+            <br />
+            <p>
+              In my personal life, I like to go to the gym and travel whenever I
+              can. My favorite trip was when I visited Japan. I believe everyone
+              should go travel there at least once. One of my goals is to live
+              there at some point, whenever an opportunity presents itself. It
+              can be now or 30 years later, but I want to experience the culture
+              again firsthand. Some of my less active hobbies include watching
+              anime (some of my favorites are One Piece and ReLife) and playing
+              video games (currently main Dragon Ball Sparking Zero).
+            </p>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#experience'"
+      />
     </section>
 
     <!-- EXPERIENCE SECTION -->
-     <section id="experience">
-        <p class="section__text__p1">Explore My</p>
-        <h1 class="title">Experience</h1>
-        <div class="experience-details-container">
-            <div class="about-containers">
-                <div class="details-container">
-                    <h2 class="experience-sub-title">iOS Development</h2>
-                    <div class="article-container">
-                        <article>
-                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon">
-                            <div>
-                                <h3>Swift</h3>
-                                <p>Experienced</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon">
-                            <div>
-                                <h3>SwiftUI/UIKit</h3>
-                                <p>Experienced</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon">
-                            <div>
-                                <h3>Combine</h3>
-                                <p>Experienced</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon">
-                            <div>
-                                <h3>Core Data</h3>
-                                <p>Experienced</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon">
-                            <div>
-                                <h3>SPM/CocoaPods</h3>
-                                <p>Experienced</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon">
-                            <div>
-                                <h3>Unit Tests</h3>
-                                <p>Experienced</p>
-                            </div>
-                        </article>
-                    </div>
+    <section id="experience">
+      <p class="section__text__p1">Explore My</p>
+      <h1 class="title">Experience</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <h2 class="experience-sub-title">iOS Development</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Swift</h3>
+                  <p>Experienced</p>
                 </div>
-                <div class="details-container">
-                    <h2 class="experience-sub-title">Frontend Development</h2>
-                    <div class="article-container">
-                        <article>
-                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon">
-                            <div>
-                                <h3>HTML</h3>
-                                <p>Experienced</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon">
-                            <div>
-                                <h3>CSS</h3>
-                                <p>Experienced</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon">
-                            <div>
-                                <h3>Javacript</h3>
-                                <p>Experienced</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon">
-                            <div>
-                                <h3>React</h3>
-                                <p>Experienced</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon">
-                            <div>
-                                <h3>TypeScript</h3>
-                                <p>Experienced</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon">
-                            <div>
-                                <h3>Material UI</h3>
-                                <p>Experienced</p>
-                            </div>
-                        </article>
-                    </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>SwiftUI/UIKit</h3>
+                  <p>Experienced</p>
                 </div>
-                <div class="details-container">
-                    <h2 class="experience-sub-title">Backend Development</h2>
-                    <div class="article-container">
-                        <article>
-                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon">
-                            <div>
-                                <h3>PostgreSQL</h3>
-                                <p>Experienced</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon">
-                            <div>
-                                <h3>NodeJS</h3>
-                                <p>Experienced</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon">
-                            <div>
-                                <h3>Express</h3>
-                                <p>Experienced</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon">
-                            <div>
-                                <h3>Firebase</h3>
-                                <p>Experienced</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon">
-                            <div>
-                                <h3>Git</h3>
-                                <p>Experienced</p>
-                            </div>
-                        </article>
-                    </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Combine</h3>
+                  <p>Experienced</p>
                 </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Core Data</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>SPM/CocoaPods</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Unit Tests</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
             </div>
+          </div>
+          <div class="details-container">
+            <h2 class="experience-sub-title">Frontend Development</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>HTML</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>CSS</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Javacript</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>React</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>TypeScript</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Material UI</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+            </div>
+          </div>
+          <div class="details-container">
+            <h2 class="experience-sub-title">Backend Development</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>PostgreSQL</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>NodeJS</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Express</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Firebase</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Git</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+            </div>
+          </div>
         </div>
-        <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#projects'">
-     </section>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#projects'"
+      />
+    </section>
 
-     <!-- PROJECTS SECTION -->
-      <section id="projects">
-        <p class="section__text__p1">Browse My Recent</p>
-        <h1 class="title">Projects</h1>
-        <div class="experience-details-container">
-            <div class="about-containers">
-                <div class="details-container color-container">
-                    <div class="article-container">
-                        <img src="./assets/Tenki-icon.png" alt="Tenki icon" class="project-img">
-                    </div>
-                    <h2 class="experience-sub-title project-title">Tenki</h2>
-                    <div class="btn-container">
-                        <button class="btn btn-color-2 project-btn" onclick="openInNewTab('https://github.com/TSanni/TenkiWeather')">
-                            GitHub
-                        </button>
-                    </div>
-                </div>
-                <div class="details-container color-container">
-                    <div class="article-container">
-                        <img src="./assets/Houston-metro-icon.png" alt="Houston Metro icon" class="project-img">
-                    </div>
-                    <h2 class="experience-sub-title project-title">Houston Metro</h2>
-                    <div class="btn-container">
-                        <button class="btn btn-color-2 project-btn" onclick="openInNewTab('https://github.com/TSanni/HoustonMetroApp-iOS')">
-                            GitHub
-                        </button>
-                    </div>
-                </div>
-                <div class="details-container color-container">
-                    <div class="article-container">
-                        <img src="./assets/SungCalculator-icon.png" alt="SungCalculator icon" class="project-img">
-                    </div>
-                    <h2 class="experience-sub-title project-title">Sung</h2>
-                    <div class="btn-container">
-                        <button class="btn btn-color-2 project-btn" onclick="openInNewTab('https://github.com/TSanni/SungCalculator')">
-                            GitHub
-                        </button>
-                    </div>
-                </div>
+    <!-- PROJECTS SECTION -->
+    <section id="projects">
+      <p class="section__text__p1">Browse My Recent</p>
+      <h1 class="title">Projects</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/Tenki-icon.png"
+                alt="Tenki icon"
+                class="project-img"
+              />
             </div>
+            <h2 class="experience-sub-title project-title">Tenki</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="openInNewTab('https://github.com/TSanni/TenkiWeather')"
+              >
+                GitHub
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/Houston-metro-icon.png"
+                alt="Houston Metro icon"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Houston Metro</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="openInNewTab('https://github.com/TSanni/HoustonMetroApp-iOS')"
+              >
+                GitHub
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/SungCalculator-icon.png"
+                alt="SungCalculator icon"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Sung</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="openInNewTab('https://github.com/TSanni/SungCalculator')"
+              >
+                GitHub
+              </button>
+            </div>
+          </div>
         </div>
-        <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#contacts'">
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#contacts'"
+      />
+    </section>
 
-      </section>
-
-      <!-- CONTACT SECTION -->
-       <section id="contacts">
-        <p class="section__text__p1">Get in Touch</p>
-        <h1 class="title">Contact Me</h1>
-        <div class="contact-info-upper-container">
-            <div class="contact-info-container">
-                <img src="./assets/email.png" alt="Email icon" class="icon contact-icon email-icon">
-                <p><a href="mailto:tomas.sanni@yahoo.com">tomas.sanni@yahoo.com</a></p>
-            </div>
-            <div class="contact-info-container">
-                <img src="./assets/linkedin.png" alt="LinkedIn icon" class="icon contact-icon">
-                <p><a href="https://www.linkedin.com/in/tomas-sanni/" target="_blank" rel="noopener noreferrer">LinkedIn</a></p>
-            </div>
+    <!-- CONTACT SECTION -->
+    <section id="contacts">
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="./assets/email.png"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p>
+            <a href="mailto:tomas.sanni@yahoo.com">tomas.sanni@yahoo.com</a>
+          </p>
         </div>
-       </section>
+        <div class="contact-info-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="LinkedIn icon"
+            class="icon contact-icon"
+          />
+          <p>
+            <a
+              href="https://www.linkedin.com/in/tomas-sanni/"
+              target="_blank"
+              rel="noopener noreferrer"
+              >LinkedIn</a
+            >
+          </p>
+        </div>
+      </div>
+    </section>
 
-       <!-- FOOTER SECTION -->
-            <footer>
-                <nav>
-                    <div class="nav-links-container">
-                        <ul class="nav-links">
-                            <li><a href="#about">About</a></li>
-                            <li><a href="#experience">Experience</a></li>
-                            <li><a href="#projects">Projects</a></li>
-                            <li><a href="#contacts">Contacts</a></li>
-                        </ul>
-                    </div>
-                </nav>
-                <p>Copyright &#169; 2023 Tomas Sanni. All Rights Reserved.</p>
-            </footer>
-
+    <!-- FOOTER SECTION -->
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contacts">Contacts</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>Copyright &#169; 2023 Tomas Sanni. All Rights Reserved.</p>
+    </footer>
 
     <script src="script.js"></script>
-</body>
+  </body>
 </html>
